@@ -7,8 +7,8 @@ import clsx from "clsx";
 const Footer = () => {
 
   return (
-    <>
-      <footer className={clsx("mobileOnly", styles.footer)}>
+    <footer className={styles.footerLayout}>
+      <div className={clsx("mobileOnly", styles.footer)}>
         <div className={styles.content}>
           <Logo isFooter={true} />
           <div className={styles.links}>
@@ -32,8 +32,8 @@ const Footer = () => {
             </a>
           </div>
         </div>
-      </footer>
-      <footer className={clsx("desktopOnly", styles.footer)}>
+      </div>
+      <div className={clsx("desktopOnly", styles.footer)}>
         <div className={styles.content}>
           <Logo isFooter={true} />
           <div className={styles.links}>
@@ -80,8 +80,8 @@ const Footer = () => {
             </a>
           </div>
         </div>
-      </footer>
-    </>
+      </div>
+    </footer>
   );
 };
 
